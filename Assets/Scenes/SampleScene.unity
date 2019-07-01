@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 332500020}
   - component: {fileID: 332500019}
   m_Layer: 5
-  m_Name: QuaternionButton
+  m_Name: EulerButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -203,7 +203,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1032246483}
-        m_MethodName: DidPressQuaternionButton
+        m_MethodName: DidPressEulerButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -348,7 +348,7 @@ GameObject:
   - component: {fileID: 820290332}
   - component: {fileID: 820290331}
   m_Layer: 5
-  m_Name: EulerButton
+  m_Name: QuaternionButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -418,7 +418,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1032246483}
-        m_MethodName: DidPressEulerButton
+        m_MethodName: DidPressQuaternionButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -719,7 +719,7 @@ Canvas:
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -819,7 +819,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Quaternion.Euler(x: 0f, y: 180f, z: 0f);'
+  m_Text: 'Quaternion(x: 0f, y: 1f, z: 0f, w: 0f)'
 --- !u!222 &1638607195
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -898,7 +898,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Quaternion(x: 0f, y: 1f, z: 0f, w: 0f)'
+  m_Text: "Quaternion.Euler(x: 0f, y: 180f, z: 0f)\t"
 --- !u!222 &1889109061
 CanvasRenderer:
   m_ObjectHideFlags: 0

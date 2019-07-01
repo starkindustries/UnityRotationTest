@@ -13,13 +13,13 @@ public class RotationTest : MonoBehaviour
         rb.angularVelocity = 10f;
     }
 
-    public void DidPressQuaternionButton()
+    public void DidPressEulerButton()
     {
         transform.rotation = Quaternion.Euler(x: 0f, y: 180f, z: 0f);
         Debug.Log("Quaternion.Euler(x: 0f, y: 180f, z: 0f): " + transform.rotation.ToString());
     }
 
-    public void DidPressEulerButton()
+    public void DidPressQuaternionButton()
     {
         transform.rotation = new Quaternion(x: 0f, y: 1f, z: 0f, w: 0f);
         Debug.Log("Quaternion(x: 0f, y: 1f, z: 0f, w: 0f): " + transform.rotation.ToString());
